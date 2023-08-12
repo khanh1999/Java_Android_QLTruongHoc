@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imgAva"
+        android:layout_width="163dp"
+        android:layout_height="230dp"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/txtmaL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã Lớp:" />
+
+        <TextView
+            android:id="@+id/txttenL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên Lớp:" />
+
+        <TextView
+            android:id="@+id/txtsiso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sỉ số:" />
+
+        <TextView
+            android:id="@+id/txtgvcn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GVCN:" />
+
+        <TextView
+            android:id="@+id/txtgvtoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GV Toán:" />
+
+        <TextView
+            android:id="@+id/txtgvly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GV Lý:" />
+
+        <TextView
+            android:id="@+id/txtgvhoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GV Hóa:" />
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+    </LinearLayout>
+</LinearLayout>

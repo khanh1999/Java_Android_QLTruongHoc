@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateLH">
+
+    <ImageView
+        android:id="@+id/imgAvaLh"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnChup"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Chụp hình"
+        app:layout_constraintBottom_toTopOf="@+id/btnChon"
+        app:layout_constraintLeft_toRightOf="@id/imgAvaLh"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnChon"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Chọn Hình"
+        app:layout_constraintBottom_toTopOf="@id/edttenL"
+        app:layout_constraintTop_toBottomOf="@id/btnChup"
+        app:layout_constraintLeft_toRightOf="@id/imgAvaLh"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edttenL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/imgAvaLh"
+        app:layout_constraintBottom_toTopOf="@id/edtsiso"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtsiso"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/edtgvcn"
+        app:layout_constraintTop_toBottomOf="@+id/edttenL"/>
+
+    <EditText
+        android:id="@+id/edtgvcn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/edtsiso"
+        app:layout_constraintBottom_toTopOf="@id/edtgvtoan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtgvtoan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtgvly"
+        app:layout_constraintTop_toBottomOf="@id/edtgvcn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/edtgvly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtgvhoa"
+        app:layout_constraintTop_toBottomOf="@id/edtgvtoan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+/>
+
+    <EditText
+        android:id="@+id/edtgvhoa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnLuu"
+        app:layout_constraintTop_toBottomOf="@id/edtgvly"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+/>
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Lưu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnHuy"
+        app:layout_constraintTop_toBottomOf="@id/edtgvhoa" />
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Hủy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnLuu"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtgvhoa" />
+
+ />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
